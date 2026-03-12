@@ -34,6 +34,7 @@ function getWeatherMeta(code) {
 }
 
 app.use(bodyParser.urlencoded({ extended: true }));
+app.set("view engine", "ejs");
 app.use(express.static("public"));
 
 app.get("/", async (req, res) => {
