@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+.back-div {
+  background-color: #000000;
+  min-height: 100dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.today-week-element {
+    color: #444444;
+    cursor: pointer;
+}
+
+.today-week-element:hover {
+    color: #000000;
+    text-decoration: underline;
+}
+
+.today-week-element.selected {
+    color: #000000;
+    text-decoration: underline;
+}
+
+.big-icon {
+    width: 80%;
+}

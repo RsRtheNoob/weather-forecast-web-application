@@ -1,0 +1,27 @@
+<form class="flex flex-col" action="/forecast" method="POST">
+    <!-- <div class="flex"> -->
+      <label class="text-amber-300" for="latitude">Latitude: </label>
+      <input class="border-amber-600 border-2 text-amber-300" name="latitude" type="number" step="0.000001" required>
+    <!-- </div>
+    <div class="flex"> --><br>
+      <label class="text-amber-300" for="longitude">Longitude: </label>
+      <input class="border-amber-600 border-2 text-amber-300" name="longitude" type="number" step="0.000001" required>
+    <!-- </div> --><br>
+
+    <label class="text-amber-300" for="timezone">Timezone: </label>
+    <select class="border-amber-600 border-2 text-amber-300" name="timezone" id="fruits">
+      <option value="GMT" selected>GMT+0(default)</option>
+      <option value="America/New_York">New York, USA</option>
+      <option value="Europe/London">London, England</option>
+      <option value="Asia/Tokyo">Tokyo, Japan</option>
+      <option value="Australia/Sydney">Sydney, Australia</option>
+    </select><br>
+
+    <!-- <p>Select your favorite sports:</p>
+    <label><input type="checkbox" name="sport" value="soccer"> Soccer</label><br>
+    <label><input type="checkbox" name="sport" value="tennis"> Tennis</label><br>
+    <label><input type="checkbox" name="sport" value="basketball"> Basketball</label> -->
+
+
+    <button class="border-amber-600 border-2 text-amber-300" type="Submit">Submit</button>
+  </form>

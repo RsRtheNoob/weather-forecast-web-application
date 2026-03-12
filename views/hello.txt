@@ -1,0 +1,112 @@
+<form class="flex flex-col" action="/forecast" method="POST">
+    <!-- <div class="flex"> -->
+      <label class="text-amber-300" for="latitude">Latitude: </label>
+      <input class="border-amber-600 border-2 text-amber-300" name="latitude" type="number" step="0.000001" required>
+    <!-- </div>
+    <div class="flex"> --><br>
+      <label class="text-amber-300" for="longitude">Longitude: </label>
+      <input class="border-amber-600 border-2 text-amber-300" name="longitude" type="number" step="0.000001" required>
+    <!-- </div> --><br>
+
+    <label class="text-amber-300" for="timezone">Timezone: </label>
+    <select class="border-amber-600 border-2 text-amber-300" name="timezone" id="fruits">
+      <option value="GMT" selected>GMT+0(default)</option>
+      <option value="America/New_York">New York, USA</option>
+      <option value="Europe/London">London, England</option>
+      <option value="Asia/Tokyo">Tokyo, Japan</option>
+      <option value="Australia/Sydney">Sydney, Australia</option>
+    </select><br>
+
+    <!-- <p>Select your favorite sports:</p>
+    <label><input type="checkbox" name="sport" value="soccer"> Soccer</label><br>
+    <label><input type="checkbox" name="sport" value="tennis"> Tennis</label><br>
+    <label><input type="checkbox" name="sport" value="basketball"> Basketball</label> -->
+
+
+    <button class="border-amber-600 border-2 text-amber-300" type="Submit">Submit</button>
+  </form>
+
+  .................................................................................
+
+  
+  <!-- <% if (locals.latitude&&locals.longitude) { %>
+  <div id="frame-b4c225b72dcb3b747e6d6ffcf44b1a9d-dark" class="relative" style="height: auto;">
+    <style>
+      #frame-b4c225b72dcb3b747e6d6ffcf44b1a9d-dark {
+        height: 480px;
+      }
+
+      @media (min-width: 704px) {
+        #frame-b4c225b72dcb3b747e6d6ffcf44b1a9d-dark {
+          height: 248px;
+        }
+      }
+    </style><iframe class="w-full overflow-hidden rounded-lg ring-1 ring-gray-950/10 dark:ring-white/20" id="frame-b4c225b72dcb3b747e6d6ffcf44b1a9d-dark" title="Simple in cards preview" aria-label="Simple in cards preview" name="frame-b4c225b72dcb3b747e6d6ffcf44b1a9d-dark" srcdoc="&lt;!doctype html&gt;&lt;meta charset=&quot;utf-8&quot;&gt;&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1, shrink-to-fit=no&quot;&gt;&lt;link rel=&quot;preconnect&quot; href=&quot;https://rsms.me/&quot;&gt;&lt;link rel=&quot;stylesheet&quot; href=&quot;https://rsms.me/inter/inter.css&quot;&gt;&lt;script src=&quot;https://cdn.jsdelivr.net/npm/@tailwindplus/elements@insiders&quot; type=&quot;module&quot;&gt;&lt;/script&gt;&lt;style&gt;/*! tailwindcss v4.1.14 | MIT License | https://tailwindcss.com */
+@layer properties{@supports (((-webkit-hyphens:none)) and (not (margin-trim:inline))) or ((-moz-orient:inline) and (not (color:rgb(from red r g b)))){*,:before,:after,::backdrop{--tw-font-weight:initial;--tw-tracking:initial;--tw-shadow:0 0 #0000;--tw-shadow-color:initial;--tw-shadow-alpha:100%;--tw-inset-shadow:0 0 #0000;--tw-inset-shadow-color:initial;--tw-inset-shadow-alpha:100%;--tw-ring-color:initial;--tw-ring-shadow:0 0 #0000;--tw-inset-ring-color:initial;--tw-inset-ring-shadow:0 0 #0000;--tw-ring-inset:initial;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-offset-shadow:0 0 #0000}}}@layer theme{:root,:host{--font-sans:InterVariable,system-ui,sans-serif;--font-sans--font-feature-settings:&quot;cv02&quot;,&quot;cv03&quot;,&quot;cv04&quot;,&quot;cv11&quot;}}@layer base{*,:after,:before,::backdrop{box-sizing:border-box;border:0 solid;margin:0;padding:0}::file-selector-button{box-sizing:border-box;border:0 solid;margin:0;padding:0}html,:host{-webkit-text-size-adjust:100%;tab-size:4;line-height:1.5;font-family:var(--font-sans,ui-sans-serif,system-ui,sans-serif,&quot;Apple Color Emoji&quot;,&quot;Segoe UI Emoji&quot;,&quot;Segoe UI Symbol&quot;,&quot;Noto Color Emoji&quot;);font-feature-settings:var(--font-sans--font-feature-settings);font-variation-settings:initial;-webkit-tap-highlight-color:transparent}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;-webkit-text-decoration:inherit;-webkit-text-decoration:inherit;-webkit-text-decoration:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,samp,pre{font-feature-settings:initial;font-variation-settings:initial;font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;font-size:1em}small{font-size:80%}sub,sup{vertical-align:baseline;font-size:75%;line-height:0;position:relative}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}:-moz-focusring{outline:auto}progress{vertical-align:baseline}summary{display:list-item}ol,ul,menu{list-style:none}img,svg,video,canvas,audio,iframe,embed,object{vertical-align:middle;display:block}img,video{max-width:100%;height:auto}button,input,select,optgroup,textarea{font:inherit;font-feature-settings:inherit;font-variation-settings:inherit;letter-spacing:inherit;color:inherit;opacity:1;background-color:#0000;border-radius:0}::file-selector-button{font:inherit;font-feature-settings:inherit;font-variation-settings:inherit;letter-spacing:inherit;color:inherit;opacity:1;background-color:#0000;border-radius:0}:where(select:is([multiple],[size])) optgroup{font-weight:bolder}:where(select:is([multiple],[size])) optgroup option{padding-inline-start:20px}::file-selector-button{margin-inline-end:4px}::placeholder{opacity:1}@supports (not ((-webkit-appearance:-apple-pay-button))) or (contain-intrinsic-size:1px){::placeholder{color:currentColor}@supports (color:color-mix(in lab, red, red)){::placeholder{color:color-mix(in oklab,currentcolor 50%,transparent)}}}textarea{resize:vertical}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-date-and-time-value{min-height:1lh;text-align:inherit}::-webkit-datetime-edit{display:inline-flex}::-webkit-datetime-edit-fields-wrapper{padding:0}::-webkit-datetime-edit{padding-block:0}::-webkit-datetime-edit-year-field{padding-block:0}::-webkit-datetime-edit-month-field{padding-block:0}::-webkit-datetime-edit-day-field{padding-block:0}::-webkit-datetime-edit-hour-field{padding-block:0}::-webkit-datetime-edit-minute-field{padding-block:0}::-webkit-datetime-edit-second-field{padding-block:0}::-webkit-datetime-edit-millisecond-field{padding-block:0}::-webkit-datetime-edit-meridiem-field{padding-block:0}::-webkit-calendar-picker-indicator{line-height:1}:-moz-ui-invalid{box-shadow:none}button,input:where([type=button],[type=reset],[type=submit]){appearance:button}::file-selector-button{appearance:button}::-webkit-inner-spin-button{height:auto}::-webkit-outer-spin-button{height:auto}[hidden]:where(:not([hidden=until-found])){display:none!important}}@layer components;@layer utilities{.nvb{margin-inline:auto}.nvc{margin-top:.25rem}.nvd{margin-top:1.25rem}.nve{display:grid}.nvf{max-width:80rem}.nvg{grid-template-columns:repeat(1,minmax(0,1fr))}.nvh{gap:1.25rem}.nvi{text-overflow:ellipsis;white-space:nowrap;overflow:hidden}.nvj{overflow:hidden}.nvk{border-radius:.5rem}.nvl{background-color:oklch(96.7% .003 264.542)}.nvm{background-color:oklab(27.8% -.00750866 -.0321344/.75)}.nvn{background-color:oklch(21% .034 264.665)}.nvo{background-color:#fff}.nvp{padding-inline:1rem}.nvq{padding-block:1.25rem}.nvr{padding-block:3rem}.nvs{font-size:1.875rem;line-height:var(--tw-leading,calc(2.25/1.875))}.nvt{font-size:1rem;line-height:var(--tw-leading,calc(1.5/1))}.nvu{font-size:.875rem;line-height:var(--tw-leading,calc(1.25/.875))}.nvv{--tw-font-weight:500;font-weight:500}.nvw{--tw-font-weight:600;font-weight:600}.nvx{--tw-tracking:-.025em;letter-spacing:-.025em}.nvy{color:oklch(70.7% .022 261.325)}.nvz{color:oklch(55.1% .027 264.364)}.nwa{color:oklch(21% .034 264.665)}.nwb{color:#fff}.nwc{color-scheme:dark}.nwd{--tw-shadow:0 1px 3px 0 var(--tw-shadow-color,#0000001a),0 1px 2px -1px var(--tw-shadow-color,#0000001a);box-shadow:var(--tw-inset-shadow),var(--tw-inset-ring-shadow),var(--tw-ring-offset-shadow),var(--tw-ring-shadow),var(--tw-shadow)}.nwe{--tw-inset-ring-shadow:inset 0 0 0 1px var(--tw-inset-ring-color,currentcolor);box-shadow:var(--tw-inset-shadow),var(--tw-inset-ring-shadow),var(--tw-ring-offset-shadow),var(--tw-ring-shadow),var(--tw-shadow)}.nwf{--tw-inset-ring-color:oklab(100% 0 5.96046e-8/.1)}@media (min-width:40rem){.nwg{grid-template-columns:repeat(3,minmax(0,1fr))}.nwh{padding:1.5rem}.nwi{padding-inline:1.5rem}}@media (min-width:64rem){.nwj{padding-inline:2rem}}@media (prefers-color-scheme:dark){.nwk{background-color:oklab(27.8% -.00750866 -.0321344/.75)}.nwl{background-color:oklch(21% .034 264.665)}.nwm{color:oklch(70.7% .022 261.325)}.nwn{color:#fff}.nwo{color-scheme:dark}.nwp{--tw-inset-ring-shadow:inset 0 0 0 1px var(--tw-inset-ring-color,currentcolor);box-shadow:var(--tw-inset-shadow),var(--tw-inset-ring-shadow),var(--tw-ring-offset-shadow),var(--tw-ring-shadow),var(--tw-shadow)}.nwq{--tw-inset-ring-color:oklab(100% 0 5.96046e-8/.1)}}}@property --tw-font-weight{syntax:&quot;*&quot;;inherits:false}@property --tw-tracking{syntax:&quot;*&quot;;inherits:false}@property --tw-shadow{syntax:&quot;*&quot;;inherits:false;initial-value:0 0 #0000}@property --tw-shadow-color{syntax:&quot;*&quot;;inherits:false}@property --tw-shadow-alpha{syntax:&quot;&lt;percentage&gt;&quot;;inherits:false;initial-value:100%}@property --tw-inset-shadow{syntax:&quot;*&quot;;inherits:false;initial-value:0 0 #0000}@property --tw-inset-shadow-color{syntax:&quot;*&quot;;inherits:false}@property --tw-inset-shadow-alpha{syntax:&quot;&lt;percentage&gt;&quot;;inherits:false;initial-value:100%}@property --tw-ring-color{syntax:&quot;*&quot;;inherits:false}@property --tw-ring-shadow{syntax:&quot;*&quot;;inherits:false;initial-value:0 0 #0000}@property --tw-inset-ring-color{syntax:&quot;*&quot;;inherits:false}@property --tw-inset-ring-shadow{syntax:&quot;*&quot;;inherits:false;initial-value:0 0 #0000}@property --tw-ring-inset{syntax:&quot;*&quot;;inherits:false}@property --tw-ring-offset-width{syntax:&quot;&lt;length&gt;&quot;;inherits:false;initial-value:0}@property --tw-ring-offset-color{syntax:&quot;*&quot;;inherits:false;initial-value:#fff}@property --tw-ring-offset-shadow{syntax:&quot;*&quot;;inherits:false;initial-value:0 0 #0000}&lt;/style&gt;&lt;script src=&quot;/plus-assets/build/iframe/components.js?hash=25df7d34d043de1c316a31211aa744b1&quot;&gt;&lt;/script&gt;&lt;link rel=&quot;modulepreload&quot; href=&quot;https://tailwindcss.com/plus-assets/build/assets/iframe-BUCe_xEG.js&quot; /&gt;&lt;script type=&quot;module&quot; src=&quot;https://tailwindcss.com/plus-assets/build/assets/iframe-BUCe_xEG.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+     window.addEventListener('load', () =&gt; window.setTimeout(() =&gt; {
+        const makeLink = (asset) =&gt; {
+            const link = document.createElement('link')
+
+            Object.keys(asset).forEach((attribute) =&gt; {
+                link.setAttribute(attribute, asset[attribute])
+            })
+
+            return link
+        }
+
+        const loadNext = (assets, count) =&gt; window.setTimeout(() =&gt; {
+            if (count &gt; assets.length) {
+                count = assets.length
+
+                if (count === 0) {
+                    return
+                }
+            }
+
+            const fragment = new DocumentFragment
+
+            while (count &gt; 0) {
+                const link = makeLink(assets.shift())
+                fragment.append(link)
+                count--
+
+                if (assets.length) {
+                    link.onload = () =&gt; loadNext(assets, 1)
+                    link.onerror = () =&gt; loadNext(assets, 1)
+                }
+            }
+
+            document.head.append(fragment)
+        })
+
+        loadNext([], 3)
+    }))
+&lt;/script&gt;&lt;style&gt;body { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; background-color: oklch(21% 0.034 264.665); }&lt;/style&gt;&lt;body&gt;&lt;div class=&quot;nvn nwc&quot;&gt;
+  &lt;div class=&quot;nvb nvf nvp nvr nwi nwj&quot;&gt;
+    &lt;div&gt;
+      &lt;h3 class=&quot;nvt nvw nwb&quot;&gt;Last 30 days&lt;/h3&gt;
+      &lt;dl class=&quot;nvd nve nvg nvh nwg&quot;&gt;
+        &lt;div class=&quot;nvj nvk nvm nvp nvq nwd nwe nwf nwh&quot;&gt;
+          &lt;dt class=&quot;nvi nvu nvv nvy&quot;&gt;Latitude:&lt;/dt&gt;
+          &lt;dd class=&quot;nvc nvs nvw nvx nwb&quot;&gt;<%= latitude %>&lt;/dd&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;nvj nvk nvm nvp nvq nwd nwe nwf nwh&quot;&gt;
+          &lt;dt class=&quot;nvi nvu nvv nvy&quot;&gt;Longitude:&lt;/dt&gt;
+          &lt;dd class=&quot;nvc nvs nvw nvx nwb&quot;&gt;<%= longitude %>&lt;/dd&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;nvj nvk nvm nvp nvq nwd nwe nwf nwh&quot;&gt;
+          &lt;dt class=&quot;nvi nvu nvv nvy&quot;&gt;Timezone:&lt;/dt&gt;
+          &lt;dd class=&quot;nvc nvs nvw nvx nwb&quot;&gt;<%= timezone %> <%= timezone_abbreviation %>&lt;/dd&gt;
+        &lt;/div&gt;
+      &lt;/dl&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;script&gt;&lt;/script&gt;
+&lt;/body&gt;" style="height: 248px;"></iframe>
+    <div class="absolute inset-y-0 left-full hidden cursor-ew-resize items-center px-2 sm:flex">
+      <div class="h-8 w-1.5 rounded-full bg-gray-400"></div>
+    </div>
+  </div>
+  <% } %> -->

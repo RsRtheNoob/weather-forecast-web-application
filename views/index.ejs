@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/styles/output.css" rel="stylesheet">
+  <script defer src="/scripts/script.js"></script>
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="back-div">
+    <div class="flex h-[98dvh] w-[98dvw] bg-white rounded-[40px] overflow-hidden">
+    <div class="flex-2 flex flex-col bg-white">
+      <div class="flex-5 flex flex-col justify-center items-center">
+        <div class="w-full flex justify-center items-center">
+          <% if (locals.weatherWeek) { %>
+          <img class="big-icon" src="/images/<%= weatherWeek[0].icon %>" alt="<%= weatherWeek[0].alt %>" aria-label="<%= weatherWeek[0].label %>">
+          <% } %>
+        </div>
+        <div class="w-full px-[10%]">
+          <h1 class="text-red-900 text-7xl inline"> <%= daily.temperature_2m_max[0] %> </h1>
+        <!-- </div>
+        <div class="w-full px-[10%]"> -->
+          <% if(locals.daily) { %>
+          <h1 class="text-2xl inline"> <%= weekday[new Date(daily.time[0]).getDay()]; %> </h1>
+          <% } %>
+        </div>
+      </div>
+      <hr>
+      <div class="flex-2 flex flex-col justify-center items-center">
+        <% if (locals.daily) { %>
+        <div class="w-full px-[10%]">
+          <h3> <%= weatherWeek[0].alt %> </h3>
+        </div>
+        <div class="w-full px-[10%]">
+          <h2> <%= timezone %> </h2>
+        </div>
+        <% } %>
+      </div>
+    </div>
+    <div class="flex-5 flex flex-col justify-center items-center bg-gray-300">
+      <div class="flex-3 w-full flex flex-col justify-center items-center">
+        <div class="flex-1 w-full flex items-end">
+          <h3 class="today-week-element inline-block px-4 text-2xl">Today</h3>
+          <h3 class="today-week-element selected inline-block px-4 text-2xl">Week</h3>
+        </div>
+        <div class="flex-2 w-full flex justify-evenly items-center">
+          <div class="today-week-sub visible w-full flex justify-evenly items-center">
+            <div class="flex flex-col justify-center items-center bg-white rounded-[5%] w-[12.5%]">
+            <h5> <%= weekday[new Date(daily.time[0]).getDay()]; %> </h5>
+            <% if (locals.weatherWeek) { %>
+            <img src="/images/<%= weatherWeek[0].icon %>" alt="<%= weatherWeek[0].alt %>" aria-label="<%= weatherWeek[0].label %>">
+            <% } %>
+            <h5 class="text-red-900"> <%= daily.temperature_2m_max[0] %> </h5>
+            <h5 class="text-green-900"> <%= daily.temperature_2m_min[0] %> </h5>
+          </div>
+          <div class="flex flex-col justify-center items-center bg-white rounded-[5%] w-[12.5%]">
+            <h5> <%= weekday[new Date(daily.time[1]).getDay()]; %> </h5>
+            <% if (locals.weatherWeek) { %>
+            <img src="/images/<%= weatherWeek[1].icon %>" alt="<%= weatherWeek[1].alt %>" aria-label="<%= weatherWeek[1].label %>">
+            <% } %>
+            <h5 class="text-red-900"> <%= daily.temperature_2m_max[1] %> </h5>
+            <h5 class="text-green-900"> <%= daily.temperature_2m_min[1] %> </h5>
+          </div>
+          <div class="flex flex-col justify-center items-center bg-white rounded-[5%] w-[12.5%]">
+            <h5> <%= weekday[new Date(daily.time[2]).getDay()]; %> </h5>
+            <% if (locals.weatherWeek) { %>
+            <img src="/images/<%= weatherWeek[2].icon %>" alt="<%= weatherWeek[2].alt %>" aria-label="<%= weatherWeek[2].label %>">
+            <% } %>
+            <h5 class="text-red-900"> <%= daily.temperature_2m_max[2] %> </h5>
+            <h5 class="text-green-900"> <%= daily.temperature_2m_min[2] %> </h5>
+          </div>
+          <div class="flex flex-col justify-center items-center bg-white rounded-[5%] w-[12.5%]">
+            <h5> <%= weekday[new Date(daily.time[3]).getDay()]; %> </h5>
+            <% if (locals.weatherWeek) { %>
+            <img src="/images/<%= weatherWeek[3].icon %>" alt="<%= weatherWeek[3].alt %>" aria-label="<%= weatherWeek[3].label %>">
+            <% } %>
+            <h5 class="text-red-900"> <%= daily.temperature_2m_max[3] %> </h5>
+            <h5 class="text-green-900"> <%= daily.temperature_2m_min[3] %> </h5>
+          </div>
+          <div class="flex flex-col justify-center items-center bg-white rounded-[5%] w-[12.5%]">
+            <h5> <%= weekday[new Date(daily.time[4]).getDay()]; %> </h5>
+            <% if (locals.weatherWeek) { %>
+            <img src="/images/<%= weatherWeek[4].icon %>" alt="<%= weatherWeek[4].alt %>" aria-label="<%= weatherWeek[4].label %>">
+            <% } %>
+            <h5 class="text-red-900"> <%= daily.temperature_2m_max[4] %> </h5>
+            <h5 class="text-green-900"> <%= daily.temperature_2m_min[4] %> </h5>
+          </div>
+          <div class="flex flex-col justify-center items-center bg-white rounded-[5%] w-[12.5%]">
+            <h5> <%= weekday[new Date(daily.time[5]).getDay()]; %> </h5>
+            <% if (locals.weatherWeek) { %>
+            <img src="/images/<%= weatherWeek[5].icon %>" alt="<%= weatherWeek[5].alt %>" aria-label="<%= weatherWeek[5].label %>">
+            <% } %>
+            <h5 class="text-red-900"> <%= daily.temperature_2m_max[5] %> </h5>
+            <h5 class="text-green-900"> <%= daily.temperature_2m_min[5] %> </h5>
+          </div>
+          <div class="flex flex-col justify-center items-center bg-white rounded-[5%] w-[12.5%]">
+            <h5> <%= weekday[new Date(daily.time[6]).getDay()]; %> </h5>
+            <% if (locals.weatherWeek) { %>
+            <img src="/images/<%= weatherWeek[6].icon %>" alt="<%= weatherWeek[6].alt %>" aria-label="<%= weatherWeek[6].label %>">
+            <% } %>
+            <h5 class="text-red-900"> <%= daily.temperature_2m_max[6] %> </h5>
+            <h5 class="text-green-900"> <%= daily.temperature_2m_min[6] %> </h5>
+          </div>
+          </div>
+          <div class="today-week-sub hidden">
+            <h2> Hello </h2>
+          </div>
+        </div>
+      </div>
+      <div class="flex-5">
+        <%- include('partials/form.ejs') %>
+      </div>
+    </div>
+  </div>
+  </div>
+  
+</body>
+
+</html>
